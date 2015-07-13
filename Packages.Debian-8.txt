@@ -1,0 +1,94 @@
+su
+
+
+
+apt update
+
+
+
+apt-get install -y apt-xapian-index
+update-apt-xapian-index -vf
+
+
+
+apt-get install -y linux-headers-$(uname -r)
+
+apt-get install -y zip
+apt-get install -y samba
+apt-get install -y libav-tools
+apt-get install -y vlc
+apt-get install -y gthumb
+apt-get install -y gir1.2-gtop-2.0
+apt-get install -y gnome-applets
+apt-get install -y blueman
+apt-get install -y gparted
+apt-get install -y inkscape
+apt-get install -y imagemagick
+apt-get install -y ghex
+
+apt-get install -y openjdk-7-jdk
+apt-get install -y build-essential
+apt-get install -y cmake
+apt-get install -y git
+apt-get install -y eclipse
+apt-get install -y eclipse-cdt
+
+apt-get install -y libboost-all-dev
+apt-get install -y libqt4-dev
+apt-get install -y libhdf5-dev
+apt-get install -y libarmadillo-dev
+apt-get install -y libmuparser-dev
+apt-get install -y libqglviewer-dev
+apt-get install -y libgraphviz-dev
+apt-get install -y festival
+apt-get install -y festvox-kallpc16k
+
+apt-get install -y hdfview
+
+
+
+echo 'deb http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt all main' > /etc/apt/sources.list.d/ubuntuzilla.list
+apt-key adv --recv-keys --keyserver keyserver.ubuntu.com C1289A29
+apt update
+apt remove -y iceweasel icedove
+apt install -y firefox thunderbird
+
+
+
+apt-get remove -y totem
+apt-get remove -y vinagre
+apt-get remove -y hamster-applet
+apt-get remove -y cheese
+apt-get remove -y gnote
+apt-get remove -y shotwell
+apt-get remove -y sound-juicer
+apt-get remove -y xchat
+apt-get remove -y evolution
+apt-get remove -y zeitgeist
+
+apt-get remove -y gnome-games
+apt-get remove -y gnome-sudoku
+apt-get remove -y gnome-chess
+apt-get remove -y gnome-klotski
+apt-get remove -y gnome-mahjongg
+apt-get remove -y gnome-mines
+apt-get remove -y gnome-nibbles
+apt-get remove -y gnome-robots
+apt-get remove -y gnome-tetravex
+apt-get remove -y five-or-more
+apt-get remove -y four-in-a-row
+apt-get remove -y hitori
+apt-get remove -y iagno
+apt-get remove -y lightsoff
+apt-get remove -y aisleriot
+apt-get remove -y quadrapassel
+apt-get remove -y swell-foop
+apt-get remove -y xboard
+apt-get remove -y tali
+
+apt-get remove -y pidgin
+apt-get remove -y tomboy
+apt-get remove -y brltty
+
+apt-get remove -y nautilus
+
